@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    display: flex;
+    background-color: rgb(60, 172, 60);
+    justify-content: center;
+    padding: 15px;
+}
+
+#heading li {
+    list-style: none;
+    padding-left: 40px;
+}
+
+a {
+    color: white;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 220, 220);
+    border: 2px solid black;
+}
+
+.box {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.box1 {
+    width: 250px;
+    margin: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+}
+
+#taskTable {
+    width: 100%;
+    
+    border-collapse: collapse;
+}
+
+#taskTable th, #taskTable td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+#taskTable th
+{
+    background-color:rgb(30, 180, 30) ;
+}
+
+.priority-low {
+    color: rgb(0, 128, 0);
+}
+
+.priority-medium {
+    color: rgb(0, 0, 255);
+}
+
+.priority-high {
+    color: rgb(255, 0, 0);
+}
+
+.status-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.status-pending {
+    background-color: orange;
+    color: white;
+}
+
+.status-in-progress {
+    background-color: green;
+    color: white;
+}
+
+.status-complete {
+    background-color: red;
+    color: white;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-button:hover {
+    opacity: 0.8;
+}

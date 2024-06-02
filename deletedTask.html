@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleted Tasks</title>
+    <link rel="stylesheet" href="./deletedTask.css">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            <li>Masai-Task-Manager</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="deletedTask.html">Deleted Tasks</a></li>
+        </div>
+        <div class="box">
+            <div class="filter">
+                <select id="filterPriority">
+                    <option value="">Filter by Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <select id="filterStatus">
+                    <option value="">Filter by Status</option>
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In-Progress</option>
+                    <option value="complete">Complete</option>
+                </select>
+            </div>
+            <table id="deletedTaskTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Restore</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="scripts/deletedTask.js"></script>
+</body>
+</html>

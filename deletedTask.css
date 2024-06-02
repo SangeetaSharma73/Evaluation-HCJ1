@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    display: flex;
+    background-color: rgb(60, 172, 60);
+    justify-content: center;
+    padding: 15px;
+}
+
+#heading li {
+    list-style: none;
+    padding-left: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 220, 220);
+    border: 2px solid black;
+}
+
+.box {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter select {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#deletedTaskTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#deletedTaskTable th, #deletedTaskTable td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+.priority-low {
+    color: rgb(0, 128, 0);
+}
+
+.priority-medium {
+    color: rgb(0, 0, 255);
+}
+
+.priority-high {
+    color: rgb(255, 0, 0);
+}
+
+.restore-button, .delete-button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: red;
+}
+
+.restore-button:hover, .delete-button:hover {
+    opacity: 0.8;
+}
