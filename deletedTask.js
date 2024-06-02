@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deletedTaskTableBody = document.querySelector('#deletedTaskTable tbody');
 
     let deletedTasks = JSON.parse(localStorage.getItem('deletedTasks')) || [];
-
+    
     const renderDeletedTasks = (tasks) => {
         deletedTaskTableBody.innerHTML = '';
         tasks.forEach((task, index) => {
@@ -70,9 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         renderDeletedTasks(filteredTasks);
     };
-
+    
+    deleteButton.addEventListener('click', () => {
+    deletedTasks.splice(index, 1);
+    localStorage.setItem('deletedTasks', JSON.stringify(deletedTasks));
+    renderDeletedTasks(deletedTasks);
+});
+    
+    
     filterPrioritySelect.addEventListener('change', filterTasks);
     filterStatusSelect.addEventListener('change', filterTasks);
-
+    
     renderDeletedTasks(deletedTasks);
 });

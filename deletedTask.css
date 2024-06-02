@@ -40,12 +40,12 @@ a {
 
 .filter {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
 .filter select {
-    width: 45%;
+    width: 20%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -61,7 +61,12 @@ a {
     padding: 10px;
     text-align: center;
 }
-
+#deletedTaskTable th
+{
+    background-color: rgb(8, 153, 8);
+    color: white;
+    
+}
 .priority-low {
     color: rgb(0, 128, 0);
 }

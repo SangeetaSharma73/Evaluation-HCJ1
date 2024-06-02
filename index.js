@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         taskPrioritySelect.value = '';
         renderTasks(tasks);
     });
-
+    
+    
     renderTasks(tasks);
 });
